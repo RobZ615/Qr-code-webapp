@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QR Code Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1>QR Code Generator</h1>
+
+
+        <div class="form-section">
+
+            <h2>Create Email QR Code</h2>
+
+            <p>Enter an email address to create a QR code that opens an email draft.</p>
+
+            <input type="email" id="email-input" placeholder="Enter email address">
+
+            <button id="email-btn">Generate QR Code</button>
+
+        </div>
+
+
+        <div class="form-section">
+
+            <h2>Create URL QR Code</h2>
+
+            <p>Enter any URL to create a scannable link.</p>
+
+            <input type="text" id="url-input" placeholder="https://example.com">
+
+            <button id="url-btn">Generate QR Code</button>
+
+        </div>
+
+        
+
+        <div id="qrcode-container">
+
+            <div id="qrcode"></div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+    
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+
